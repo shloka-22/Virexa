@@ -1,3 +1,72 @@
 # MedMatch
 
-MedMatch is a spectroscopy-based pill identification system that scans a medication, analyzes its chemical profile, compares the scan with a reference database, and flags potentially counterfeit or dangerous substances.
+MedMatch is a spectroscopy-based pill identification system that scans a medication, analyzes its chemical profile, compares the scan with reference data, and flags potentially counterfeit or dangerous substances.
+
+## Project Structure
+
+The main MedMatch source code and PlatformIO project files are located inside the `MedMatch2026` folder.
+
+## Requirements
+
+- Visual Studio Code
+- PlatformIO IDE extension
+- A USB data cable
+- The MedMatch prototype hardware used in the demonstration
+
+## Setup Instructions
+
+### 1. Download the repository
+
+Click the green **Code** button and select **Download ZIP**.
+
+Extract the downloaded ZIP file onto your computer.
+
+### 2. Install Visual Studio Code
+
+Download and install Visual Studio Code if it is not already installed.
+
+### 3. Install PlatformIO
+
+Open Visual Studio Code.
+
+Go to the Extensions tab, search for **PlatformIO IDE**, and install it.
+
+### 4. Open the MedMatch project
+
+In Visual Studio Code, select:
+
+`File → Open Folder`
+
+Open the `MedMatch2026` folder located inside the downloaded repository.
+
+Wait for PlatformIO to load the project and install any required dependencies.
+
+### 5. Build the project
+
+Open the PlatformIO menu in Visual Studio Code.
+
+Select **Project Tasks**, then select **Build** to compile the MedMatch code.
+
+### 6. Upload and run
+
+Connect the MedMatch prototype to the computer with a USB data cable.
+
+Select the correct serial port in PlatformIO and click **Upload**.
+
+After the upload finishes, open the PlatformIO Serial Monitor to view the program output and scanning results.
+
+## How MedMatch Works
+
+1. A pill is placed inside the MedMatch scanning area.
+2. The prototype collects information from the pill.
+3. The program processes the collected data.
+4. The results are compared with stored reference information.
+5. MedMatch displays whether the scanned pill matches the expected profile or may require further verification.
+
+## Important Notice
+
+MedMatch is an experimental prototype created for educational and research purposes. It is not a certified medical device and should not replace laboratory testing, pharmacist verification, or professional medical advice.
+
+## License
+
+This project is licensed under the MIT License.
